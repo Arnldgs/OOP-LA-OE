@@ -1,0 +1,11 @@
+#LA 1
+class chacter():
+    def __innit__(self, name, hp):
+        self.name = name
+        self.hp = hp
+        self.basic_attack = 10
+        self.power_type = "LONG RANGE"
+        self.role = "LAYLA"
+        
+lurker = character("LAYLA", 100)
+print(LAYLA.name,LAYLA.role)
