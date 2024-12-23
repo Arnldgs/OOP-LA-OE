@@ -1,0 +1,38 @@
+#LA24
+class TekkenCharacter:
+    def __init__(self, name, ability):
+        self.name = name
+        self.ability = ability
+    def introduce(self, func):
+        def wrapper():
+            print("Introducing...")
+            func(*args, **kwargs)
+            print("This character is amazing!")
+        return wrapper
+
+tekk = TekkenCharacter("Yoshimitsu", "Manji Dragonfly")
+
+@tekk.introduce
+
+def character_intro():
+    print(f"I am {self.name} and I can use {self.ability}.")
+character_intro()
+#25
+from abc import ABC, abstractmethod
+
+class Character(ABC):
+    @abstractmethod
+    def lumilipad(self):
+        pass
+
+class Batman(Character):
+    def __init__(self, real_name, __alias):
+        self.real_name = real_name
+        self.__alias = __alias
+    def alias(self):
+        return f"{self.__alias}"
+
+bat = Batman("Bruce Wayne", "Batman")
+print(bat.__alias())
+        print(f"The {thamuz.name} has been defeated")
+        break
