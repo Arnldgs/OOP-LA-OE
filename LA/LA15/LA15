@@ -1,0 +1,36 @@
+#LA15
+class Dog:
+    def __init__(self, name):
+        self.name = name
+    def speak(self):
+        print(f"{self.name} says: Bark!")
+class Cat:
+    def __init__(self, name):
+        self.name = name
+    def speak(self):
+        print(f"{self.name} says: Meow!")
+        
+class Bird:
+    def __init__(self, name):
+        self.name = name
+    def speak(self):
+        print(f"{self.name} says: Chirp!")
+        
+class Fish:
+    def __init__(self, name):
+        self.name = name
+    def speak(self):
+        print(f"{self.name} ...")
+        
+def animal_sounds(animals):
+    for animal in animals:
+        animal.speak()
+    
+dog = Dog("Sparkee")
+cat = Cat("Yassy")
+bird = Bird("Kalapati")
+fish = Fish("Fishda")
+animals = [dog, cat, bird, fish]
+animal_sounds(animals)
+for animal in animals:
+    animal.speak()
