@@ -1,0 +1,41 @@
+#LA 26
+from abc import ABC, abstractmethod
+
+class NinjaTurtle(ABC):
+    @abstractmethod
+    def pagong(self):
+        pass
+class Leonardo(NinjaTurtle):
+    def __init__(self, real_name, __alias):
+        self.real_name = real_name
+        self.__alias = __alias
+    def pagong(self):
+        return f"{self.__alias}"
+class Michelangelo(NinjaTurtle):
+    def __init__(self, real_name, __alias):
+        self.real_name = real_name
+        self.__alias = __alias
+    def pagong(self):
+        return f"{self.__alias}"
+class Donatello(NinjaTurtle):
+    def __init__(self, real_name, __alias):
+        self.real_name = real_name
+        self.__alias = __alias
+    def pagong(self):
+        return f"{self.__alias}"
+class Raphael(NinjaTurtle):
+    def __init__(self, real_name, __alias):
+        self.real_name = real_name
+        self.__alias = __alias
+    def pagong(self):
+        return f"{self.__alias}"
+import turtle
+
+leo = turtle.Leonardo("Leonardo", "Leo")
+michel = turtle.Michelangelo("Michelangelo", "Michel")
+dona = turtle.Donatello("Donatello", "Dona")
+rapha = turtle.Raphael("Raphael", "Raph")
+print(leo.pagong())
+print(michel.pagong())
+print(dona.pagong())
+print(rapha.pagong())
